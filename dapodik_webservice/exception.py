@@ -1,5 +1,6 @@
 class BaseDapoWsException(BaseException):
-    pass
+    message: str = ""
+    text: str = ""
 
 
 class TokenSalahException(BaseDapoWsException):

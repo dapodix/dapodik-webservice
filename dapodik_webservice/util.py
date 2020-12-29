@@ -1,23 +1,21 @@
 from requests import Response
 from dapodik_webservice.exception import (
+    BaseDapoWsException,
     TokenSalahException,
     NPSNKosongException,
     SekolahTidakDitemukan,
 )
-from typing import Optional
+from typing import List, Type
 
-exceptions = [TokenSalahException, NPSNKosongException, SekolahTidakDitemukan]
-
-
-def e_get_text(exception) -> Optional[str]:
-    annot = getattr(exception, "__annotations__", {})
-    return annot.get('text')
-
+exceptions: List[Type[BaseDapoWsException]] = [
+    TokenSalahException,
+    NPSNKosongException,
+    SekolahTidakDitemukan,
+]
 
 
 def handle_response(res: Response) -> Response:
     for exception in exceptions:
-        text = e_get_text(exception)
-        if text and text in res.text:
-            raise exception()
+        if exception.text and exception.text in res.text:
+            raise exception(exception.message)
     return res
