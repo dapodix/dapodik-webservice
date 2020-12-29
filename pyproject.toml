@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dapodik-webservice"
-version = "1.0.2"
+version = "1.1.0"
 description = "SDK Python Web Service aplikasi Dapodik"
 authors = ["hexatester <habibrohman@protonmail.com>"]
 license = "GPLv3"
