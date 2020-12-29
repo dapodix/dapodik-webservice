@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "dapodik-webservice"
+version = "0.1.0"
+description = "SDK Python Web Service aplikasi Dapodik"
+authors = ["hexatester <habibrohman@protonmail.com>"]
+license = "GPLv3"
+readme = "README.md"
+homepage = "https://dapodix.github.io/dapodik-webservice/"
+repository = "https://github.com/dapodix/dapodik-webservice"
+include = [
+    "LICENSE",
+    "README.md",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.25.1"
+dacite = "^1.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.790"
+black = "^20.8b1"
+flake8 = "^3.8.4"
+rope = "^0.18.0"
+pre-commit = "^2.9.3"
+pytest-cov = "^2.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
