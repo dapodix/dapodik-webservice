@@ -8,7 +8,6 @@ from dapodik_webservice.models import (
     RombonganBelajar,
     Sekolah,
 )
-from dapodik_webservice.result import Result
 from dapodik_webservice.util import handle_response
 
 
