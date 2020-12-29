@@ -1,5 +1,7 @@
 # dapodik-webservice
 
+[![dapodik-webservice - PyPi](https://img.shields.io/pypi/v/dapodik-webservice)](https://pypi.org/project/dapodik-webservice/)
+
 SDK Python Web Service aplikasi Dapodik
 
 ## Install
