@@ -1,7 +1,7 @@
 from __future__ import annotations
 from dacite import from_dict
 from dataclasses import dataclass
-from typing import Optional
+from typing import List, Optional
 
 from dapodik_webservice.typing import Rows
 
