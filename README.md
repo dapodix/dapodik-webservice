@@ -22,7 +22,7 @@ from dapodik_webservice import DapodikWebservice
 token = 'token webservice'
 npsn = '12345678'
 
-dw = DapodikWebservice("QafRD49m8sn6UAD", "69842452")
+dw = DapodikWebservice(token, npsn)
 
 sekolah = dw.sekolah
 
