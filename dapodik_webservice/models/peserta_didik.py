@@ -1,13 +1,11 @@
-from __future__ import annotations
-from dacite import from_dict
-from dataclasses import dataclass
-from typing import List, Optional
+from typing import Optional
 
-from dapodik_webservice.typing import Rows
+from dapodik_webservice.converter import dataclass
+from . import BaseModel
 
 
 @dataclass
-class PesertaDidik:
+class PesertaDidik(BaseModel):
     registrasi_id: str
     jenis_pendaftaran_id: str
     jenis_pendaftaran_id_str: str
@@ -16,7 +14,7 @@ class PesertaDidik:
     sekolah_asal: Optional[str]
     peserta_didik_id: str
     nama: str
-    nisn: str
+    nisn: Optional[str]
     jenis_kelamin: str
     nik: str
     tempat_lahir: str
@@ -42,13 +40,8 @@ class PesertaDidik:
     rombongan_belajar_id: str
     tingkat_pendidikan_id: str
     nama_rombel: str
-    kurikulum_id: str
+    kurikulum_id: int
     kurikulum_id_str: str
 
     def __str__(self) -> str:
         return self.nama
-
-    @classmethod
-    def from_result(cls, data: dict) -> List[PesertaDidik]:
-        rows: Rows = data["rows"]
-        return [from_dict(PesertaDidik, row) for row in rows]
