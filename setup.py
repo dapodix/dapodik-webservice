@@ -19,7 +19,7 @@ setup(
     keywords="dapodik dapodik-webservice kemdikbud",
     description="SDK Python Web Service aplikasi Dapodik",
     packages=packages,
-    install_requires=["python", "requests", "dacite"],
+    install_requires=["python", "requests", "dacite", "attrs"],
     include_package_data=True,
     classifiers=[
         "Development Status :: 4 - Beta",
