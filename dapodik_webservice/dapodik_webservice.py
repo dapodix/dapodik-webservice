@@ -40,8 +40,8 @@ class DapodikWebservice(object):
         Returns:
             List[Pengguna]: list Pengguna
         """
-        res = self._get("getSekolah")
-        return Pengguna.from_result(res)
+        res = self._get("getPengguna")
+        return Pengguna.from_results(res)
 
     @property
     def peserta_didik(self) -> List[PesertaDidik]:
