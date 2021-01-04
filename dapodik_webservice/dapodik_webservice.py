@@ -71,7 +71,7 @@ class DapodikWebservice(object):
             List[RombonganBelajar]: list RombonganBelajar
         """
         res = self._get("getRombonganBelajar")
-        return RombonganBelajar.from_result(res)
+        return RombonganBelajar.from_results(res)
 
     @property
     def sekolah(self) -> Sekolah:

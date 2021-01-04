@@ -1,9 +1,11 @@
-from dataclasses import dataclass
+from dapodik_webservice.converter import dataclass
 from typing import Optional
+
+from .. import BaseModel
 
 
 @dataclass
-class Pembelajaran:
+class Pembelajaran(BaseModel):
     pembelajaran_id: str
     mata_pelajaran_id: int
     mata_pelajaran_id_str: str
