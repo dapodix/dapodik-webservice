@@ -61,7 +61,7 @@ class DapodikWebservice(object):
             List[Ptk]: list Ptk
         """
         res = self._get("getGtk")
-        return Ptk.from_result(res)
+        return Ptk.from_results(res)
 
     @property
     def rombongan_belajar(self) -> List[RombonganBelajar]:

@@ -1,6 +1,7 @@
-from dataclasses import dataclass
+from dapodik_webservice.converter import dataclass
+from .. import BaseModel
 
 
 @dataclass
-class RwyKepangkatan:
+class RwyKepangkatan(BaseModel):
     pass
