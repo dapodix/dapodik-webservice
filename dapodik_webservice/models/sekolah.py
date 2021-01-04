@@ -1,13 +1,11 @@
-from __future__ import annotations
-from dacite import from_dict
-from dataclasses import dataclass
 from typing import Optional
 
-from dapodik_webservice.typing import Row
+from dapodik_webservice.converter import dataclass
+from . import BaseModel
 
 
 @dataclass
-class Sekolah:
+class Sekolah(BaseModel):
     sekolah_id: str
     nama: str
     nss: str
@@ -33,8 +31,3 @@ class Sekolah:
     kecamatan: str
     kabupaten_kota: str
     provinsi: str
-
-    @classmethod
-    def from_result(cls, data: dict) -> Sekolah:
-        row: Row = data["rows"]
-        return from_dict(Sekolah, row)
