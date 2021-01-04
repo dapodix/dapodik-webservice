@@ -1,12 +1,15 @@
 # dapodik-webservice
 
 [![dapodik-webservice - PyPi](https://img.shields.io/pypi/v/dapodik-webservice)](https://pypi.org/project/dapodik-webservice/)
+[![Tests](https://github.com/dapodix/dapodik-webservice/workflows/Tests/badge.svg)](https://github.com/dapodix/dapodik-webservice/actions)
+[![codecov](https://codecov.io/gh/dapodix/dapodik-webservice/branch/main/graph/badge.svg?token=2rX7lP6K0C)](https://codecov.io/gh/dapodix/dapodik-webservice)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
 SDK Python Web Service aplikasi Dapodik
 
 ## Install
 
-Pastikan python 3.7 terinstall, kemudian jalankan perintah di bawah dalam Command Prompt atau Powershell (di Windows + X):
+Pastikan python 3.7 terinstall, kemudian jalankan perintah di bawah dalam Command Prompt atau Powershell (di Windows + X / klik kanan icon Windows):
 
 ```bash
 pip install --upgrade dapodik-webservice
