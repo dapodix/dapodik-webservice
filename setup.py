@@ -20,6 +20,9 @@ setup(
     description="SDK Python Web Service aplikasi Dapodik",
     packages=packages,
     install_requires=["python", "requests", "attrs"],
+    extras_require={
+        "excel": ["openpyxl", "click"],
+    },
     include_package_data=True,
     classifiers=[
         "Development Status :: 5 - Production/Stable",
