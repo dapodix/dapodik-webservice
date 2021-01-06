@@ -64,7 +64,7 @@ def export_pengguna(
     dapodik = ctx.obj or DapodikWebservice(token, npsn, url)
     pengguna = dapodik.pengguna
     if pengguna:
-        namafile = namafile or list(npsn)
+        namafile = namafile or [npsn]
         for nama in namafile:
             filepath = makefilepath(nama)
             wb, ws = pengguna_export(pengguna, filepath)
@@ -92,7 +92,7 @@ def export_peserta_didik(
     dapodik = ctx.obj or DapodikWebservice(token, npsn, url)
     peserta_didik = dapodik.peserta_didik
     if peserta_didik:
-        namafile = namafile or list(npsn)
+        namafile = namafile or [npsn]
         for nama in namafile:
             filepath = makefilepath(nama)
             wb, ws = peserta_didik_export(peserta_didik, filepath)
@@ -123,7 +123,7 @@ def export_ptk(
     dapodik = ctx.obj or DapodikWebservice(token, npsn, url)
     ptk = dapodik.ptk
     if ptk:
-        namafile = namafile or list(npsn)
+        namafile = namafile or [npsn]
         for nama in namafile:
             filepath = makefilepath(nama)
             wb, ws = ptk_export(ptk, filepath)
@@ -152,7 +152,7 @@ def export_rombongan_belajar(
     dapodik = ctx.obj or DapodikWebservice(token, npsn, url)
     rombongan_belajar = dapodik.rombongan_belajar
     if rombongan_belajar:
-        namafile = namafile or list(npsn)
+        namafile = namafile or [npsn]
         for nama in namafile:
             filepath = makefilepath(nama)
             wb, ws = rombongan_belajar_export(rombongan_belajar, filepath)
@@ -183,7 +183,7 @@ def export_sekolah(
     dapodik = ctx.obj or DapodikWebservice(token, npsn, url)
     sekolah = dapodik.sekolah
     if sekolah:
-        namafile = namafile or list(npsn)
+        namafile = namafile or [npsn]
         for nama in namafile:
             filepath = makefilepath(nama)
             wb, ws = sekolah_export(sekolah, filepath)

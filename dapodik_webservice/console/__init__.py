@@ -13,6 +13,3 @@ __all__ = [
     "sekolah_export",
     "cli",
 ]
-
-if __name__ == "__main__":
-    exit(cli())

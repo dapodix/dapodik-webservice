@@ -49,7 +49,7 @@ def rombongan_belajar_export(
             ws[cell] = getattr(rombongan_belajar, key, ws[cell])
         end = cell
     if table:
-        tab = Table(displayName="PesertaDidik", ref=f"A1:{end}")
+        tab = Table(displayName="RombonganBelajar", ref=f"A1:{end}")
         tab.tableStyleInfo = TableStyleInfo(
             name="TableStyleMedium9",
             showFirstColumn=False,
