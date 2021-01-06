@@ -73,7 +73,7 @@ def export_pengguna(
         click.echo("Data pengguna kosong!")
 
 
-@export.command("peserta didik", help="Export data Peserta didik ke excel")
+@export.command("peserta-didik", help="Export data Peserta didik ke excel")
 @click.option(
     "--url", required=False, default="http://localhost:5774", help="URL server dapodik"
 )
@@ -133,7 +133,7 @@ def export_ptk(
         click.echo("Data ptk kosong!")
 
 
-@export.command("rombongan belajar", help="Export data Rombongan belajar ke excel")
+@export.command("rombongan-belajar", help="Export data Rombongan belajar ke excel")
 @click.option(
     "--url", required=False, default="http://localhost:5774", help="URL server dapodik"
 )
