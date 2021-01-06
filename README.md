@@ -14,9 +14,10 @@ _Jangan lupa untuk [donasi](#donasi)_
 
 ### Aplikasi CLI
 
-Download `dapodik-export` dari [halaman rilis](https://github.com/dapodix/dapodik-webservice/releases) file `dapodik-export.zip`.
-Exstrak `dapodik-export.zip` dan masuk folder dapodik-export.
-Buka / open `cmd / windows powershell` di folder tersebut dengan tahan shift + klik kanan di dalam folder _(jangan klik kanan file apapun)_.
+1. Download `dapodik-export` dari [halaman rilis](https://github.com/dapodix/dapodik-webservice/releases) file `dapodik-export.zip`.
+2. _Matikan antivirus atau buat pengecualian folder yang sudah diekstrak._
+3. Exstrak `dapodik-export.zip` _(klik kanan Extract Here)_ dan masuk folder dapodik-export.
+4. Buka / open `cmd / windows powershell` di folder tersebut dengan tahan shift + klik kanan di dalam folder _(jangan klik kanan file apapun)_.
 
 #### Contoh penggunaan Aplikasi CLI
 
