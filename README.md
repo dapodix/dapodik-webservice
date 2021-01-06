@@ -8,16 +8,36 @@
 [![Mypy](https://img.shields.io/badge/Mypy-enabled-brightgreen)](https://github.com/python/mypy)
 
 SDK Python Web Service aplikasi Dapodik
-
-## Install
-
-Pastikan python 3.6 terinstall, kemudian jalankan perintah di bawah dalam Command Prompt atau Powershell (di Windows + X / klik kanan icon Windows):
-
-```bash
-pip install --upgrade dapodik-webservice
-```
+_Jangan lupa untuk [donasi](#donasi)_
 
 ## Penggunaan
+
+### Aplikasi CLI
+
+Download `dapodik-export` dari [halaman rilis](https://github.com/dapodix/dapodik-webservice/releases) sebaiknya dowload file `.zip` karena lebih cepat.
+Exstrak filenya dan masuk folder dapodik-export _(jika menggunakan zip)_.
+Buka folder yang berisi `dapodik-export.exe`
+Buka / open `cmd / windows powershell` di folder tersebut dengan tahan shift + klik kanan di dalam folder _(jangan klik kanan file apapun)_.
+
+#### Contoh penggunaan Aplikasi CLI
+
+Berikut contoh perintah yang bisa dijalankan melalui `cmd / windows powershell`
+
+_Rubah `token saya` menjadi token webservice dari aplikasi DAPODIK bagian pengaturan!_
+
+Mengeksport semua data ke dalam file bernama `Sekolahku`
+
+```cmd
+dapodik-export.exe export semua --token "token saya" --npsn "0123456789" "Sekolahku"
+```
+
+Mengeksport data peserta didik ke dalam file bernama `Peserta didik`
+
+```cmd
+dapodik-export.exe export peserta-didik --token "token saya" --npsn "0123456789" "Peserta didik"
+```
+
+### Dengan Python
 
 Untuk menggunakan modul ini silahkan buat token Web Service Dapodik terlebih dahulu di pengaturan Dapodik.
 
@@ -33,6 +53,14 @@ sekolah = dw.sekolah
 
 print(sekolah.nama)
 
+```
+
+## Install Dari PIP
+
+_Khusus untuk pengembang python_! Pastikan python 3.6 terinstall, kemudian jalankan perintah di bawah dalam Command Prompt atau Powershell (di Windows + X / klik kanan icon Windows):
+
+```bash
+pip install --upgrade dapodik-webservice
 ```
 
 ## Donasi
