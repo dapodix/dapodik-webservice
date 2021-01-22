@@ -12,7 +12,7 @@ class Pengguna(BaseModel):
     nama: str
     peran_id_str: str
     password: str
-    alamat: str
+    alamat: Optional[str]
     no_telepon: Optional[str]
     no_hp: Optional[str]
     ptk_id: Optional[str]
