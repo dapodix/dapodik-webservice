@@ -13,8 +13,13 @@ class TestPengguna:
             assert isinstance(p.nama, str)
             assert isinstance(p.peran_id_str, str)
             assert isinstance(p.password, str)
-            assert isinstance(p.alamat, str)
-            assert not p.no_telepon or isinstance(p.no_telepon, str)
-            assert not p.no_hp or isinstance(p.no_hp, str)
-            assert not p.ptk_id or isinstance(p.ptk_id, str)
-            assert not p.peserta_didik_id or isinstance(p.peserta_didik_id, str)
+            if p.alamat:
+                assert isinstance(p.alamat, str)
+            if p.no_telepon:
+                assert isinstance(p.no_telepon, str)
+            if p.no_hp:
+                assert isinstance(p.no_hp, str)
+            if p.ptk_id:
+                assert isinstance(p.ptk_id, str)
+            if p.peserta_didik_id:
+                assert isinstance(p.peserta_didik_id, str)
